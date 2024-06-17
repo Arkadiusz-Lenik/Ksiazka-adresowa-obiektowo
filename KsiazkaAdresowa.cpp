@@ -33,3 +33,11 @@ void KsiazkaAdresowa::wylogujUzytkownika()
     adresatMenedzer.ustawIdZalogowanegoUzytkownika(0);
     adresatMenedzer.usunListeAdresatowZalogowanegoUzytkownika();
 }
+
+bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
+{
+    if (uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika() == 0)
+        return false;
+    else
+        return true;
+}

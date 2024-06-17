@@ -7,7 +7,7 @@ using namespace std;
 
 class Uzytkownik
 {
-    int id;
+    int idUzytkownika;
     string login;
     string haslo;
 

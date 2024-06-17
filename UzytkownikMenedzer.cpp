@@ -19,6 +19,8 @@ void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
         cout << uzytkownicy[i].pobierzLogin() << endl;
         cout << uzytkownicy[i].pobierzHaslo() << endl << endl;
     }
+
+    system("pause");
 }
 
 Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
