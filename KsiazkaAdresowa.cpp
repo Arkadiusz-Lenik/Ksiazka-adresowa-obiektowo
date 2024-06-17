@@ -22,3 +22,8 @@ void KsiazkaAdresowa::wypiszWszystkichAdresatow()
     adresatMenedzer.wypiszWszystkichAdresatowDanegoUzytkownika();
 }
 
+void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
+{
+    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();
+}
+

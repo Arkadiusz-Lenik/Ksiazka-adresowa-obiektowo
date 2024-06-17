@@ -7,9 +7,11 @@ int main()
 {
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-    ksiazkaAdresowa.wypiszWszystkichAdresatow();
+    //ksiazkaAdresowa.wypiszWszystkichAdresatow();
     ksiazkaAdresowa.logowanieUzytkownika();
-    ksiazkaAdresowa.wypiszWszystkichAdresatow();
+    //ksiazkaAdresowa.wypiszWszystkichAdresatow();
+    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
 
     return 0;
 }
