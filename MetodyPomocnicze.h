@@ -11,6 +11,7 @@ class MetodyPomocnicze
 public:
     static string konwersjaIntNaString(int liczba);
     static int konwersjaStringNaInt(string liczba);
+    static char wczytajZnak();
 };
 
 #endif

@@ -22,6 +22,13 @@ void AdresatMenedzer::wypiszWszystkichAdresatowDanegoUzytkownika()
         cout << "Email: " << adresaci[i].pobierzEmail() << endl;
         cout << "Adres:" << adresaci[i].pobierzAdres() << endl << endl;
     }
+
+    if (adresaci.empty())
+    {
+        cout << "Ksiazka adresowa jest pusta" << endl;
+    }
+
+    system("pause");
 }
 
 void AdresatMenedzer::usunListeAdresatowZalogowanegoUzytkownika()
