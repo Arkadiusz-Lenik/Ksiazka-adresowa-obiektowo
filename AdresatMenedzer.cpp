@@ -23,3 +23,8 @@ void AdresatMenedzer::wypiszWszystkichAdresatowDanegoUzytkownika()
         cout << "Adres:" << adresaci[i].pobierzAdres() << endl << endl;
     }
 }
+
+void AdresatMenedzer::usunListeAdresatowZalogowanegoUzytkownika()
+{
+    adresaci.clear();
+}

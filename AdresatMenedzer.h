@@ -21,6 +21,7 @@ public:
     void ustawIdZalogowanegoUzytkownika(int noweId);
     void pobierzAdresatowZalogowanegoUzytkownikaZPliku();
     void wypiszWszystkichAdresatowDanegoUzytkownika();
+    void usunListeAdresatowZalogowanegoUzytkownika();
 };
 
 #endif
