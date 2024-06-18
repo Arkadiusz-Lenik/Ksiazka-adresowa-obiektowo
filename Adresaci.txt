@@ -1,7 +1,0 @@
-1|2|Ewa|Harnik|111 111 111|ewa@harnik.pl|Opole|
-2|2|Sonia|Bohosiewicz|222 222 222|sonia@bohosiewicz.pl|Plock|
-4|1|Tatiana|Okupnik|444 444 444|tatiana@okupnik.pl|Szczecin|
-5|1|Alicja|Jasna|555 555 555|alicja@jasna.pl|Czestochowa|
-6|1|Krystyna|Bogacka|666 666 666|krystyna@bogacka.pl|Lublin|
-8|3|Kasia|Brown|888 888 888|kasia@brown.pl|Berlin|
-9|3|Jadwiga|Rak|666 666 666|jadwiga@rak.pl|Katowice|

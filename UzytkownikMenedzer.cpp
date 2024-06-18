@@ -11,18 +11,6 @@ void UzytkownikMenedzer::rejestracjaUzytkownika()
     system("pause");
 }
 
-void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
-{
-    for (size_t i = 0; i <uzytkownicy.size(); i++)
-    {
-        cout << uzytkownicy[i].pobierzId() << endl;
-        cout << uzytkownicy[i].pobierzLogin() << endl;
-        cout << uzytkownicy[i].pobierzHaslo() << endl << endl;
-    }
-
-    system("pause");
-}
-
 Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
 {
     Uzytkownik uzytkownik;
@@ -34,12 +22,12 @@ Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
     do
     {
         cout << "Podaj login: ";
-        cin >> login;
+        login = MetodyPomocnicze::wczytajLinie();
         uzytkownik.ustawLogin(login);
-    } while (czyIstniejeLogin(uzytkownik.pobierzLogin()) == true);
+    } while (czyIstniejeLogin(uzytkownik.pobierzLogin()));
 
     cout << "Podaj haslo: ";
-    cin >> haslo;
+    haslo = MetodyPomocnicze::wczytajLinie();
     uzytkownik.ustawHaslo(haslo);
 
     return uzytkownik;
@@ -47,7 +35,7 @@ Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
 
 int UzytkownikMenedzer::pobierzIdNowegoUzytkownika()
 {
-    if (uzytkownicy.empty() == true)
+    if (uzytkownicy.empty())
         return 1;
     else
         return uzytkownicy.back().pobierzId() + 1;
@@ -74,11 +62,10 @@ void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
 void UzytkownikMenedzer::logowanieUzytkownika()
 {
     string login = "", haslo = "";
-    //int idZalogowanegoUzytkownika = 0;
     bool czyPodanyUzytkownikIstnieje = false;
 
     cout << endl << "Podaj login: ";
-    cin >> login;
+    login = MetodyPomocnicze::wczytajLinie();
 
     for (size_t i = 0; i <uzytkownicy.size(); i++)
     {
@@ -89,7 +76,7 @@ void UzytkownikMenedzer::logowanieUzytkownika()
             for (int iloscProb = 3; iloscProb > 0; iloscProb--)
             {
                 cout << "Podaj haslo. Pozostalo prob: " << iloscProb << ": ";
-                cin >> haslo;
+                haslo = MetodyPomocnicze::wczytajLinie();
 
                 if (uzytkownicy[i].pobierzHaslo() == haslo)
                 {
@@ -123,7 +110,7 @@ void UzytkownikMenedzer::zmianaHaslaZalogowanegoUzytkownika()
 {
     string noweHaslo = "";
     cout << "Podaj nowe haslo: ";
-    cin >> noweHaslo;
+    noweHaslo = MetodyPomocnicze::wczytajLinie();
 
     for (size_t i = 0; i < uzytkownicy.size(); i++)
     {

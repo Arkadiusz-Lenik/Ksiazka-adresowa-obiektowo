@@ -27,9 +27,6 @@ int main()
             case '2':
                 ksiazkaAdresowa.logowanieUzytkownika();
                 break;
-            case '3':
-                ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-                break;
             case '9':
                 exit(0);
                 break;
@@ -46,23 +43,22 @@ int main()
             switch (wybor)
             {
             case '1':
-                //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+                ksiazkaAdresowa.dodajAdresata();
                 break;
             case '2':
-                //wyszukajAdresatowPoImieniu(adresaci);
+                ksiazkaAdresowa.wyszukajAdresatowPoImieniu();
                 break;
             case '3':
-                //wyszukajAdresatowPoNazwisku(adresaci);
+                ksiazkaAdresowa.wyszukajAdresatowPoNazwisku();
                 break;
             case '4':
-                ksiazkaAdresowa.wypiszWszystkichAdresatow();
+                ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
-                //idUsunietegoAdresata = usunAdresata(adresaci);
-                //idOstatniegoAdresata = podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(idUsunietegoAdresata, idOstatniegoAdresata);
+                ;
                 break;
             case '6':
-                //edytujAdresata(adresaci);
+                ;
                 break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
@@ -86,7 +82,6 @@ char wybierzOpcjeZMenuGlownego()
     cout << "---------------------------" << endl;
     cout << "1. Rejestracja" << endl;
     cout << "2. Logowanie" << endl;
-    cout << "3. Wyswietl wszystkich uzytkownikow (opcja tymczasowa)" << endl;
     cout << "9. Koniec programu" << endl;
     cout << "---------------------------" << endl;
     cout << "Twoj wybor: ";
