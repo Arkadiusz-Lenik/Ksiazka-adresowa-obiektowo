@@ -27,7 +27,6 @@ public:
     void rejestracjaUzytkownika();
     void logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
-    void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku();
     int pobierzIdZalogowanegoUzytkownika();
     void ustawIdZalogowanegoUzytkownika(int noweId);

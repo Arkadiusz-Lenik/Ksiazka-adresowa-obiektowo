@@ -23,8 +23,10 @@ public:
     void logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
     void wylogujUzytkownika();
-    void wypiszWszystkichUzytkownikow();
-    void wypiszWszystkichAdresatow();
+    void dodajAdresata();
+    void wyswietlWszystkichAdresatow();
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
     bool czyUzytkownikJestZalogowany();
 };
 

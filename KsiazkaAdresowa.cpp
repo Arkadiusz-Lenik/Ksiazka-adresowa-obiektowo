@@ -12,14 +12,9 @@ void KsiazkaAdresowa::logowanieUzytkownika()
     adresatMenedzer.pobierzAdresatowZalogowanegoUzytkownikaZPliku();
 }
 
-void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
+void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
-    uzytkownikMenedzer.wypiszWszystkichUzytkownikow();
-}
-
-void KsiazkaAdresowa::wypiszWszystkichAdresatow()
-{
-    adresatMenedzer.wypiszWszystkichAdresatowDanegoUzytkownika();
+    adresatMenedzer.wyswietlWszystkichAdresatow();
 }
 
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
@@ -40,4 +35,19 @@ bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
         return false;
     else
         return true;
+}
+
+void KsiazkaAdresowa::dodajAdresata()
+{
+    adresatMenedzer.dodajAdresata();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    adresatMenedzer.wyszukajAdresatowPoImieniu();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    adresatMenedzer.wyszukajAdresatowPoNazwisku();
 }
