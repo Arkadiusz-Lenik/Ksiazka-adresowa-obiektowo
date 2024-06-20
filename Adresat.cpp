@@ -1,38 +1,38 @@
 #include "Adresat.h"
 
-void Adresat::ustawId(int noweId)
+void Adresat::ustawId(int id)
 {
-    id = noweId;
+    this->id = id;
 }
 
-void Adresat::ustawIdUzytkownika(int noweIdUzytkownika)
+void Adresat::ustawIdUzytkownika(int idUzytkownika)
 {
-    idUzytkownika = noweIdUzytkownika;
+    this->idUzytkownika = idUzytkownika;
 }
 
-void Adresat::ustawImie(string noweImie)
+void Adresat::ustawImie(string imie)
 {
-    imie = noweImie;
+    this->imie = imie;
 }
 
-void Adresat::ustawNazwisko(string noweNazwisko)
+void Adresat::ustawNazwisko(string nazwisko)
 {
-    nazwisko = noweNazwisko;
+    this->nazwisko = nazwisko;
 }
 
-void Adresat::ustawNumerTelefonu(string nowyNumerTelefonu)
+void Adresat::ustawNumerTelefonu(string numerTelefonu)
 {
-    numerTelefonu = nowyNumerTelefonu;
+    this->numerTelefonu = numerTelefonu;
 }
 
-void Adresat::ustawEmail(string nowyEmail)
+void Adresat::ustawEmail(string email)
 {
-    email = nowyEmail;
+    this->email = email;
 }
 
-void Adresat::ustawAdres(string nowyAdres)
+void Adresat::ustawAdres(string adres)
 {
-    adres = nowyAdres;
+    this->adres = adres;
 }
 
 int Adresat::pobierzId()
