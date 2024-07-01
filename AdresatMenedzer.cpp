@@ -205,7 +205,7 @@ void AdresatMenedzer::edytujAdresata()
     int idEdytowanegoAdresata = 0;
 
     cout << ">>> EDYCJA WYBRANEGO ADRESATA <<<" << endl << endl;
-    idEdytowanegoAdresata = MetodyPomocnicze::podajIdWybranegoAdresata();
+    idEdytowanegoAdresata = podajIdWybranegoAdresata();
 
     char wybor;
     bool czyIstniejeAdresat = false;

@@ -57,16 +57,6 @@ string MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst
     return tekst;
 }
 
-bool MetodyPomocnicze::czyPlikJestPusty(fstream &plikTekstowy)
-{
-    plikTekstowy.seekg(0, ios::end);
-
-    if (plikTekstowy.tellg() == 0)
-        return true;
-    else
-        return false;
-}
-
 int MetodyPomocnicze::wczytajLiczbeCalkowita()
 {
     string wejscie = "";
@@ -75,20 +65,12 @@ int MetodyPomocnicze::wczytajLiczbeCalkowita()
     while (true)
     {
         getline(cin, wejscie);
-
         stringstream myStream(wejscie);
+
         if (myStream >> liczba)
             break;
         cout << "To nie jest liczba. Wpisz ponownie. " << endl;
     }
     return liczba;
-}
-
-int MetodyPomocnicze::podajIdWybranegoAdresata()
-{
-    int idWybranegoAdresata = 0;
-    cout << "Podaj numer ID Adresata: ";
-    idWybranegoAdresata  = wczytajLiczbeCalkowita();
-    return idWybranegoAdresata;
 }
 
