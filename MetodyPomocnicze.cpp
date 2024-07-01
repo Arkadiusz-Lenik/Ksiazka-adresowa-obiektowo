@@ -57,12 +57,20 @@ string MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst
     return tekst;
 }
 
-bool MetodyPomocnicze::czyPlikJestPusty(fstream &plikTekstowy)
+int MetodyPomocnicze::wczytajLiczbeCalkowita()
 {
-    plikTekstowy.seekg(0, ios::end);
+    string wejscie = "";
+    int liczba = 0;
 
-    if (plikTekstowy.tellg() == 0)
-        return true;
-    else
-        return false;
+    while (true)
+    {
+        getline(cin, wejscie);
+        stringstream myStream(wejscie);
+
+        if (myStream >> liczba)
+            break;
+        cout << "To nie jest liczba. Wpisz ponownie. " << endl;
+    }
+    return liczba;
 }
+

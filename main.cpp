@@ -10,7 +10,7 @@ char wybierzOpcjeZMenuUzytkownika();
 
 int main()
 {
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt", "Adresaci_tymczasowo.txt");
     char wybor;
 
     while (true)
@@ -55,10 +55,10 @@ int main()
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
-                ;
+                ksiazkaAdresowa.usunAdresata();
                 break;
             case '6':
-                ;
+                ksiazkaAdresowa.edytujAdresata();
                 break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();

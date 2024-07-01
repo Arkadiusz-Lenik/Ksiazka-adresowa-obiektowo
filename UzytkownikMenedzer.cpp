@@ -14,9 +14,7 @@ void UzytkownikMenedzer::rejestracjaUzytkownika()
 Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
 {
     Uzytkownik uzytkownik;
-
     uzytkownik.ustawId(pobierzIdNowegoUzytkownika());
-
     string login = "", haslo = "";
 
     do
@@ -43,7 +41,7 @@ int UzytkownikMenedzer::pobierzIdNowegoUzytkownika()
 
 bool UzytkownikMenedzer::czyIstniejeLogin(string login)
 {
-    for (size_t i = 0; i <uzytkownicy.size(); i++)
+    for (size_t i = 0; i < uzytkownicy.size(); i++)
     {
         if (uzytkownicy[i].pobierzLogin() == login)
         {
@@ -62,7 +60,7 @@ void UzytkownikMenedzer::logowanieUzytkownika()
     cout << endl << "Podaj login: ";
     login = MetodyPomocnicze::wczytajLinie();
 
-    for (size_t i = 0; i <uzytkownicy.size(); i++)
+    for (size_t i = 0; i < uzytkownicy.size(); i++)
     {
         if (uzytkownicy[i].pobierzLogin() == login)
         {
