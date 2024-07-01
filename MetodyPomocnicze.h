@@ -18,6 +18,7 @@ public:
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     static bool czyPlikJestPusty(fstream &plikTekstowy);
     static int wczytajLiczbeCalkowita();
+    static int podajIdWybranegoAdresata();
 };
 
 #endif

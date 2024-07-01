@@ -83,3 +83,12 @@ int MetodyPomocnicze::wczytajLiczbeCalkowita()
     }
     return liczba;
 }
+
+int MetodyPomocnicze::podajIdWybranegoAdresata()
+{
+    int idWybranegoAdresata = 0;
+    cout << "Podaj numer ID Adresata: ";
+    idWybranegoAdresata  = wczytajLiczbeCalkowita();
+    return idWybranegoAdresata;
+}
+
